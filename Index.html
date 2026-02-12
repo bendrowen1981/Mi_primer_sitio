@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Simulador</title>
+  <link rel="stylesheet" href="Styles.css">
+
+
+</head>
+
+<body>
+
+
+  <section class="portada" id="portada">
+    <div class="portada-contenido">
+	  <img src="logo_colegio.png" alt="Logo institucional" class="logo">
+      <h1>Encuesta para Estudiantes de Informática</h1>
+      <p>
+        Esta encuesta tiene como objetivo evaluar los conocimientos basicos de los estudiantes
+		de Informatica sobre las asignaturas de Diseño web, Programacion, Sist.Operativos y
+		Soporte tecnico, la prueba consta de 16 preguntas sencillas,Buena Suerte ;)
+		
+      </p>
+
+
+      <button onclick="iniciarEncuesta()">Iniciar encuesta</button>
+    </div>
+  </section>
+
+  
+  <div class="contenedor" id="zonaEncuesta" style="display:none;">
+    <div id="encuesta">
+
+      <h2>Encuesta Informática</h2>
+	  <div id="temporizador" class="timer">Tiempo: 05:00</div>
+      <p id="pregunta"></p>
+
+      <button id="opA" type="button" onclick="responder('A')"></button>
+      <button id="opB" type="button" onclick="responder('B')"></button>
+      <button id="opC" type="button" onclick="responder('C')"></button>
+      <button id="opD" type="button" onclick="responder('D')"></button>
+
+      <div id="resultado"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
